@@ -46,7 +46,7 @@ def main():
     reader = ReadingWord()
 
     # Add description
-    st.markdown("# OCR with OpenCV and Speech for Vietnamese")
+    st.markdown("# OCR with OpenCV and Speech for English language")
     st.markdown(
         "This web application allows you to perform OCR on an uploaded image and extract text from it. The extracted text can then be read aloud using text-to-speech functionality."
     )

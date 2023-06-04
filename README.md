@@ -21,7 +21,7 @@ Follow these steps to set up and run the OCR application locally:
 
 1. Create a repo using 'git clone https://github.com/ngochafromdn/image-to-speech-2023-Ha-implementation'
 2. Run the web using 'streamlit run streamlit-app.py'
-3. Use can also visit the app at https://stwebimage-to-speech-implementation-2023june.streamlit.app/
+3. Use can also visit the app at [https://stwebimage-to-speech-implementation-2023june.streamlit.app/](https://stwebimage-to-speech-implementation-2023.streamlit.app/)
 
 ## Reference
 

@@ -23,6 +23,7 @@ Follow these steps to set up and run the OCR application locally:
 2. Run the web using 'streamlit run streamlit-app.py'
 3. Use can also visit the app at [https://stwebimage-to-speech-implementation-2023june.streamlit.app/](https://stwebimage-to-speech-implementation-2023.streamlit.app/)
 
+( seems to broken sometimes )
 ## Reference
 
 1. https://pianalytix.com/using-easyocr-library-for-text-extraction/

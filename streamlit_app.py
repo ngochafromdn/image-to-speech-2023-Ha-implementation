@@ -11,6 +11,10 @@ from PIL import Image
 import time
 from OCR.perform_ocr import OCR
 from voice.read_aloud import ReadingWord
+import os
+
+
+os.environ["PYOPENGL_PLATFORM"] = "egl"
 
 
 def main():

@@ -14,7 +14,6 @@ from voice.read_aloud import ReadingWord
 import os
 
 
-os.environ["PYOPENGL_PLATFORM"] = "egl"
 
 
 def main():

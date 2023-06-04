@@ -7,3 +7,4 @@ pyopengl==3.1.5
 opencv-python-headless==4.5.1.48
 pyttsx3==2.7
 IPython==8.13.2
+streamlit>=0.88.0

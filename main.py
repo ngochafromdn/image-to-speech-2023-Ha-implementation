@@ -48,7 +48,7 @@ def main():
     reader = ReadingWord()
 
     # Add description
-    st.markdown("# Tranform text on image to speech")
+    st.markdown("# OCR with OpenCV and Speech for Vietnamese")
     st.markdown(
         "This web application allows you to perform OCR on an uploaded image and extract text from it. The extracted text can then be read aloud using text-to-speech functionality."
     )
@@ -61,7 +61,7 @@ def main():
 
     # Example images
     example_images = {
-        "Example 1": "Example/image1.jpeg",
+        "Example 1": "Example/image1.png",
         "Example 2": "Example/image2.jpeg",
         "Example 3": "Example/image3.jpeg",
     }
@@ -97,10 +97,20 @@ def main():
                 st.warning("Please select or upload an image to begin extraction.")
 
             # Display the extracted text
-        st.header("Extracted Text and listen to the words:")
-        st.text(extracted_text)
-        display(reader.read_aloud(extracted_text))
-        
+            st.header("Extracted Text:")
+            st.text(extracted_text)
+
+            # Generate audio file
+            audio_file = f"audio_{int(time.time())}.mp3"
+            reader.read_aloud(extracted_text, audio_file)
+
+            # Provide download link for the audio file
+            st.markdown(f"**[Download Audio]({audio_file})**")
+
+            # Play audio
+            if st.button("Read Aloud"):
+                st.markdown("Please wait while the text is being read aloud...")
+                reader.read_aloud(audio_file)
 
 if __name__ == "__main__":
     main()

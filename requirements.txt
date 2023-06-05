@@ -7,4 +7,4 @@ opencv-python-headless==4.7.0.72
 opencv-python==4.6.0.66 
 IPython==8.13.2
 gtts
-pygame==2.4.0
+pygame==2.0

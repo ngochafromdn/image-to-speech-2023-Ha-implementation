@@ -8,4 +8,4 @@ opencv-python-headless==4.5.1.48
 IPython==8.13.2
 gtts
 pygame
- 
+clik>=8.0.0

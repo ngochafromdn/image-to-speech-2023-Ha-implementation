@@ -99,7 +99,7 @@ def main():
             # Display the extracted text
         st.header("Extracted Text and listen to the words:")
         st.text(extracted_text)
-        display(reader.read_aloud(extracted_text))
+        reader.read_aloud(extracted_text)
         
 
 if __name__ == "__main__":

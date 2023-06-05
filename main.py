@@ -61,7 +61,7 @@ def main():
 
     # Example images
     example_images = {
-        "Example 1": "Example/image1.png",
+        "Example 1": "Example/image1.jpeg",
         "Example 2": "Example/image2.jpeg",
         "Example 3": "Example/image3.jpeg",
     }
@@ -99,13 +99,6 @@ def main():
             # Display the extracted text
             st.header("Extracted Text:")
             st.text(extracted_text)
-
-            # Generate audio file
-            audio_file = f"audio_{int(time.time())}.mp3"
-            reader.read_aloud(extracted_text, audio_file)
-
-            # Provide download link for the audio file
-            st.markdown(f"**[Download Audio]({audio_file})**")
 
             # Play audio
             if st.button("Read Aloud"):

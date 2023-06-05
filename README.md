@@ -13,8 +13,7 @@ The OCR application is built using the following technologies and libraries:
 - Streamlit
 - OpenCV
 - EasyOCR (for image-to-text)
-- pyttsx3 (for text-to-speech conversion)
-
+- gTTS (Google Text-to-Speech)
 
 ## How to Install
 Follow these steps to set up and run the OCR application locally:
